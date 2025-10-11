@@ -1,0 +1,17 @@
+$day-size: 100px;
+$gap: 1px;
+$paddings: 10px;
+$column-count: 7;
+$gap-count: $column-count - 1;
+
+// prettier-ignore
+$calendar-width: ($day-size * $column-count) + ($gap-count * $gap) + ($paddings * 2);
+$days: (
+  sun: 0,
+  mon: 1,
+  tue: 2,
+  wed: 3,
+  thu: 4,
+  fri: 5,
+  sat: 6,
+);
