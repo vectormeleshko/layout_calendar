@@ -1,7 +1,9 @@
 @use 'variables' as v;
-*{
+
+* {
   box-sizing: border-box;
 }
+
 body {
   margin: 0;
   display: flex;
@@ -62,8 +64,8 @@ body {
     cursor: pointer;
     background-color: #ffbfcb;
     transition:
-    transform 0.5s,
-    background-color 0.5s;
+      transform 0.5s,
+      background-color 0.5s;
 
     transform: translateY(-20px);
   }
