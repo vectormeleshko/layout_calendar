@@ -33,19 +33,17 @@ body {
     &::before {
       font-size: 30px;
       font-family: Arial, sans-serif;
-      position: absolute;
     }
 
     @for $d from 1 through 31 {
       &:nth-child(#{$d})::before {
         content: '#{$d}';
-        position: absolute;
       }
     }
   }
 
   @each $name, $col in v.$days {
-    &--#{$name} {
+    &--start-day-#{$name} {
       .calendar__day:first-child {
         margin-left: calc((v.$day-size + v.$gap) * #{$col});
       }
@@ -53,7 +51,7 @@ body {
   }
 
   @for $len from 28 through 31 {
-    &--#{$len} {
+    &--month-length-#{$len} {
       $lenp: $len + 1;
       .calendar__day:nth-child(n + #{$lenp}) {
         display: none;
